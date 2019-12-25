@@ -15,8 +15,8 @@ namespace UwU.npc
 			npc.height = 50;
 			npc.aiStyle = 3; 
 			npc.damage = 40;
-			npc.defense = 10;
-			npc.lifeMax = 70;
+			npc.defense = 12;
+			npc.lifeMax = 83;
 			npc.HitSound = SoundID.NPCHit3;
 			npc.DeathSound = SoundID.NPCHit21;
 			npc.value = 100f;
