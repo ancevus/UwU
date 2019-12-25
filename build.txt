@@ -1,4 +1,4 @@
 displayName = UwU
 author = ancevus
-version = 2.1
+version = 2.2
 homepage = https://forums.terraria.org/index.php?threads/uwu-mod.84704/
