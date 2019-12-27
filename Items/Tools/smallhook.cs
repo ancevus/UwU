@@ -1,3 +1,4 @@
+using UwU.Items.Place;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
@@ -29,6 +30,15 @@ namespace UwU.Items.Tools
             item.noMelee = true;
             item.value = 20000;
             item.shoot = ProjectileType<smallhookowo>();
+        }
+
+        public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemType<uwuraniumbar>(), 1);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
         }
     }
 
@@ -63,6 +73,8 @@ namespace UwU.Items.Tools
             return true;
         }
 
+
+
         public override void GrappleRetreatSpeed(Player player, ref float speed)
         {
             speed = 290f;
@@ -70,7 +82,7 @@ namespace UwU.Items.Tools
 
         public override void GrapplePullSpeed(Player player, ref float speed)
         {
-            speed = 321;
+            speed = 5000;
         }
     }
 }
